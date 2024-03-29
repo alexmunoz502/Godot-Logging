@@ -43,6 +43,12 @@ Example:
 [2024-03-29T08:32:20] INFO (res://example.gd:11): Hello, world!
 ```
 
+You can specify the logging level using the method `Logging.set_level(new_level: Logging.Level)`
+
+To use it, pass in the Logging.Level enum value for the level you want to set the logger to. By setting the logger level, any levels lower than the selected level will not have their entries logged.
+
+For example, if you set the log level to INFO, and try to call Logging.debug, nothing will be logged because the level of DEBUG is lower than INFO.
+
 ### Logging Entry API
 
 There is a signal `Logging.entry_logged` which can be connected to to receive notifications when an entry is logged. The object returned by the signal is a `LogEntry` object.

@@ -28,5 +28,4 @@ func _on_entry_logged(entry: LogEntry) -> void:
 	# Access Entry attributes such as color_code, level_name, trace, message and
 	# timestamp. Or, convert to string to view in bbcode format
 	logLabel.append_text(entry.to_string() + "\n")
-	print(entry.to_string())
 
