@@ -21,4 +21,4 @@ func _to_string() -> String:
 		self.trace,
 		self.message
 	]
-	return "[color=%s] [%s] %s (%s): %s" % context
+	return "[color=%s][%s] %s (%s): %s" % context
