@@ -1,5 +1,7 @@
 # Godot Logging
 
+![Godot Logging Screenshot](/assets/image.png)
+
 The Godot Logging plugin adds an autoloaded object called Logging to your Godot project.
 
 ### How to log with Logging
